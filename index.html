@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons8-наручные-часы-48.png">
+
+    <title>Clock</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="wrapper">
+<div class="header_contacts">
+    <div class="contacts_block">
+    <div class="contacts">
+
+
+        <div class="number">
+            <div class="svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5997 14.6674C8.87787 14.6639 6.26855 13.5811 4.34394 11.6565C2.41933 9.73185 1.33654 7.12253 1.33301 4.40073C1.33301 3.5874 1.6561 2.80738 2.23121 2.23227C2.80633 1.65715 3.58634 1.33406 4.39967 1.33406C4.5719 1.33275 4.74384 1.34838 4.91301 1.38073C5.07655 1.40493 5.23732 1.44512 5.39301 1.50073C5.50251 1.53915 5.60008 1.60548 5.67608 1.69318C5.75208 1.78087 5.80387 1.88688 5.82634 2.00073L6.73967 6.00073C6.76429 6.1093 6.76133 6.22231 6.73105 6.32945C6.70077 6.43658 6.64415 6.53443 6.56634 6.61406C6.47967 6.70739 6.47301 6.71406 5.65301 7.14073C6.30967 8.5813 7.46181 9.73817 8.89967 10.4007C9.33301 9.57406 9.33967 9.56739 9.43301 9.48073C9.51264 9.40292 9.61048 9.34629 9.71762 9.31602C9.82475 9.28574 9.93777 9.28278 10.0463 9.30739L14.0463 10.2207C14.1565 10.2463 14.2584 10.2995 14.3424 10.3753C14.4264 10.4511 14.4897 10.547 14.5263 10.6541C14.5826 10.8123 14.625 10.9751 14.653 11.1407C14.6798 11.3083 14.6932 11.4777 14.693 11.6474C14.6807 12.4572 14.3485 13.2294 13.769 13.7952C13.1894 14.361 12.4096 14.6745 11.5997 14.6674V14.6674ZM4.39967 2.66739C3.94051 2.66915 3.50065 2.85233 3.17596 3.17702C2.85128 3.5017 2.6681 3.94156 2.66634 4.40073C2.66811 6.76945 3.60986 9.04065 5.2848 10.7156C6.95975 12.3905 9.23095 13.3323 11.5997 13.3341C12.0588 13.3323 12.4987 13.1491 12.8234 12.8244C13.1481 12.4998 13.3313 12.0599 13.333 11.6007V11.3807L10.2397 10.6674L10.0463 11.0341C9.74634 11.6141 9.52634 12.0341 8.96634 11.8074C7.86159 11.412 6.85881 10.7754 6.03083 9.94398C5.20286 9.11255 4.57049 8.10711 4.17967 7.00073C3.93967 6.48073 4.39301 6.24073 4.96634 5.94073L5.33301 5.76073L4.61967 2.66739H4.39967Z" fill="#969696"/>
+                </svg>
+            </div>
+        <a href="tel:8 (812) 123-45-67">8 (812) 123-45-67</a>
+        </div>
+</div>
+  <!--  <div class="header_time">
+        <p> Работаем 7 дней в неделю </p>
+    </div>
+    <div class="header_times">
+        <p> 9:00 — 18:00 </p>
+    </div> -->
+    </div>
+
+    <div class="header_registrition">
+        <div class="svg">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.24967 1.16602H10.4997C11.1413 1.16602 11.6663 1.69102 11.6663 2.33268V11.666C11.6663 12.3077 11.1413 12.8327 10.4997 12.8327H5.24967C4.60801 12.8327 4.08301 12.3077 4.08301 11.666V10.4993H5.24967V11.666H10.4997V2.33268H5.24967V3.49935H4.08301V2.33268C4.08301 1.69102 4.60801 1.16602 5.24967 1.16602Z" fill="#969696"/>
+            <path d="M5.88583 9.09482L6.70833 9.91732L9.625 7.00065L6.70833 4.08398L5.88583 4.90648L7.39083 6.41732H1.75V7.58398H7.39083L5.88583 9.09482Z" fill="#969696"/>
+        </svg>
+        </div>
+        <div class="btns">
+            <button onclick="document.getElementById('id01').style.display='block'">Войти/Регистрация</button>
+
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Логин</b></label>
+                        <input type="text" placeholder="Login" name="uname" required>
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input type="password" placeholder="Password" name="psw" required>
+
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                        </label>
+                    </div>
+
+
+                    <div class="container">
+
+                        <button onclick="document.getElementById('id02').style.display='block'">Регистрация</button>
+
+                                                   <span class="psw">Забыли <a href="#">пароль?</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="header_navigations">
+    <div class="wrapper">
+ <div class="header_logo">
+
+        <nav class="header__navigation">
+            <div class="logo">
+            <svg  width="102" height="26" viewBox="0 0 102 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.476562 25V0.390625H4.41406V25H0.476562ZM6.20703 13.8906V10.0586H8.5625C10.2734 10.0586 11.1992 9.22656 11.3398 7.5625C11.3398 7.42188 11.3398 7.28125 11.3398 7.14062C11.1758 5.28906 10.25 4.31641 8.5625 4.22266H6.20703V0.390625H8.87891C13.1445 0.460938 15.2891 2.6875 15.3125 7.07031C15.3125 10.4688 14.2344 12.5898 12.0781 13.4336C11.1875 13.7383 10.1211 13.8906 8.87891 13.8906C8.83203 13.8906 7.94141 13.8906 6.20703 13.8906ZM17.2461 18.1445V6.57812C17.2461 5.33594 17.7734 4.07031 18.8281 2.78125C20.2344 1.09375 22.0156 0.238281 24.1719 0.214844V4.11719C22.9531 4.14062 22.0391 4.79688 21.4297 6.08594C21.2422 6.50781 21.1484 6.85938 21.1484 7.14062V18.1445C21.1484 19.4102 21.8047 20.3477 23.1172 20.957C23.5156 21.1445 23.8555 21.2383 24.1367 21.2383V25.1758C22.8008 25.1758 21.4648 24.6953 20.1289 23.7344C18.2305 22.3281 17.2695 20.4648 17.2461 18.1445ZM26.0703 25.1758V21.2383C26.6797 21.2383 27.3125 20.957 27.9688 20.3945C28.6719 19.7617 29.0352 19.0117 29.0586 18.1445V7.14062C29.0586 6.4375 28.7539 5.75781 28.1445 5.10156C27.5586 4.46875 26.8672 4.14062 26.0703 4.11719V0.214844C28.4375 0.214844 30.3359 1.23438 31.7656 3.27344C32.5859 4.44531 32.9961 5.54688 32.9961 6.57812V18.1445C32.9961 20.7461 31.8359 22.7383 29.5156 24.1211C28.2969 24.8242 27.1484 25.1758 26.0703 25.1758ZM35.8086 25V0.390625H39.7461V25H35.8086ZM41.5391 14.6289V11.1133H43.5078C45.5469 11.1133 46.6719 10.1406 46.8828 8.19531C46.9062 7.98438 46.918 7.78516 46.918 7.59766C46.918 5.62891 46.0273 4.46875 44.2461 4.11719C43.918 4.07031 43.5781 4.04688 43.2266 4.04688H41.5391V0.390625H43.6836C46.8008 0.460938 48.8984 1.62109 49.9766 3.87109C50.4219 4.80859 50.6445 5.88672 50.6445 7.10547C50.6211 9.70703 49.8242 11.5938 48.2539 12.7656C49.4727 13.4688 50.2461 14.7227 50.5742 16.5273C50.6211 16.832 50.6562 17.1133 50.6797 17.3711L51.2773 25H47.6211L47.0938 18.7422C46.9062 16.7734 46.3789 15.5312 45.5117 15.0156C44.9961 14.7578 44.3516 14.6289 43.5781 14.6289H41.5391ZM52.6836 4.22266V0.390625H67.9062V4.22266H62.2812V25H58.3438V4.22266H52.6836ZM69.9453 25V0.390625H82.7422V4.25781H73.8828V10.7969H79.4375V14.7344H73.8828V21.0977H82.7422V25H69.9453ZM85.5898 25V6.64844H85.8711L89.5273 12.5195V25H85.5898ZM85.5898 2.92188V0.390625H88.8594L101.234 20.2539V25H99.3359L85.5898 2.92188ZM97.2969 10.6562V0.390625H101.234V16.5273H100.953L97.2969 10.6562Z" fill="white"/>
+            </svg>
+            </div>
+            <div class="adapt">
+                <div id="nav-icon3" class="pushmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="sidebar">
+                    <div class="text d-flex p-2">
+                        <svg width="102" height="26" viewBox="0 0 102 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.476562 25V0.390625H4.41406V25H0.476562ZM6.20703 13.8906V10.0586H8.5625C10.2734 10.0586 11.1992 9.22656 11.3398 7.5625C11.3398 7.42188 11.3398 7.28125 11.3398 7.14062C11.1758 5.28906 10.25 4.31641 8.5625 4.22266H6.20703V0.390625H8.87891C13.1445 0.460938 15.2891 2.6875 15.3125 7.07031C15.3125 10.4688 14.2344 12.5898 12.0781 13.4336C11.1875 13.7383 10.1211 13.8906 8.87891 13.8906C8.83203 13.8906 7.94141 13.8906 6.20703 13.8906ZM17.2461 18.1445V6.57812C17.2461 5.33594 17.7734 4.07031 18.8281 2.78125C20.2344 1.09375 22.0156 0.238281 24.1719 0.214844V4.11719C22.9531 4.14062 22.0391 4.79688 21.4297 6.08594C21.2422 6.50781 21.1484 6.85938 21.1484 7.14062V18.1445C21.1484 19.4102 21.8047 20.3477 23.1172 20.957C23.5156 21.1445 23.8555 21.2383 24.1367 21.2383V25.1758C22.8008 25.1758 21.4648 24.6953 20.1289 23.7344C18.2305 22.3281 17.2695 20.4648 17.2461 18.1445ZM26.0703 25.1758V21.2383C26.6797 21.2383 27.3125 20.957 27.9688 20.3945C28.6719 19.7617 29.0352 19.0117 29.0586 18.1445V7.14062C29.0586 6.4375 28.7539 5.75781 28.1445 5.10156C27.5586 4.46875 26.8672 4.14062 26.0703 4.11719V0.214844C28.4375 0.214844 30.3359 1.23438 31.7656 3.27344C32.5859 4.44531 32.9961 5.54688 32.9961 6.57812V18.1445C32.9961 20.7461 31.8359 22.7383 29.5156 24.1211C28.2969 24.8242 27.1484 25.1758 26.0703 25.1758ZM35.8086 25V0.390625H39.7461V25H35.8086ZM41.5391 14.6289V11.1133H43.5078C45.5469 11.1133 46.6719 10.1406 46.8828 8.19531C46.9062 7.98438 46.918 7.78516 46.918 7.59766C46.918 5.62891 46.0273 4.46875 44.2461 4.11719C43.918 4.07031 43.5781 4.04688 43.2266 4.04688H41.5391V0.390625H43.6836C46.8008 0.460938 48.8984 1.62109 49.9766 3.87109C50.4219 4.80859 50.6445 5.88672 50.6445 7.10547C50.6211 9.70703 49.8242 11.5938 48.2539 12.7656C49.4727 13.4688 50.2461 14.7227 50.5742 16.5273C50.6211 16.832 50.6562 17.1133 50.6797 17.3711L51.2773 25H47.6211L47.0938 18.7422C46.9062 16.7734 46.3789 15.5312 45.5117 15.0156C44.9961 14.7578 44.3516 14.6289 43.5781 14.6289H41.5391ZM52.6836 4.22266V0.390625H67.9062V4.22266H62.2812V25H58.3438V4.22266H52.6836ZM69.9453 25V0.390625H82.7422V4.25781H73.8828V10.7969H79.4375V14.7344H73.8828V21.0977H82.7422V25H69.9453ZM85.5898 25V6.64844H85.8711L89.5273 12.5195V25H85.5898ZM85.5898 2.92188V0.390625H88.8594L101.234 20.2539V25H99.3359L85.5898 2.92188ZM97.2969 10.6562V0.390625H101.234V16.5273H100.953L97.2969 10.6562Z" fill="white"/>
+                        </svg>
+                        <div id="nav-icon3" class="pushmenu opened">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="menu-main-menu-container">
+                        <ul id="menu-main-menu">
+                            <li class="current-menu-item"><a href="#" >Главная</a></li>
+                            <li class="menu-parent-item"><a href="#">Личный кабинет</a></li>
+                            <li class="menu-parent-item"><a href="#">Настройки</a></li>
+                            <li class="menu-parent-item"><a href="#">Клиентам<i></i></i></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Какая-то услуга 1</a></li>
+                                    <li><a href="#">Какая-то услуга 2</a></li>
+                                    <li><a href="#">Какая-то услуга 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">История брендa</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="hidden-overley"></div>
+            </div>
+
+
+
+            <div class="navigation_block">
+            <ul class="navigation">
+                <li class="navigation__link">
+                    <a href="#"><p>Каталог</p></a>
+                </li>
+                <li class="navigation__link">
+                    <a href=""><p> Личный кабинет </p></a>
+                </li>
+                <li class="navigation__link">
+                    <a href=""><p>Настройки</p> </a>
+                </li>
+            </ul>
+            <div class="header__button">
+                <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"/>
+                    <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"/>
+                    <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"/>
+                </svg>
+                </button>
+
+
+                <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2496 17.4163L14.5251 12.6918C15.3985 11.3643 15.7483 9.76005 15.5068 8.1895C15.2653 6.61896 14.4497 5.19388 13.2178 4.19019C11.9859 3.18649 10.4255 2.67557 8.83852 2.75635C7.25158 2.83713 5.75104 3.50386 4.62745 4.62745C3.50386 5.75104 2.83713 7.25158 2.75635 8.83852C2.67557 10.4255 3.18649 11.9859 4.19019 13.2178C5.19388 14.4497 6.61896 15.2653 8.1895 15.5068C9.76005 15.7483 11.3643 15.3985 12.6918 14.5251L17.4163 19.2496L19.2496 17.4163ZM4.58293 9.16626C4.58293 6.63901 6.63901 4.58293 9.16626 4.58293C11.6935 4.58293 13.7496 6.63901 13.7496 9.16626C13.7496 11.6935 11.6935 13.7496 9.16626 13.7496C6.63901 13.7496 4.58293 11.6935 4.58293 9.16626Z" fill="white"/>
+                </svg> </button>
+            </div>
+            </div>
+        </nav>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<section class="header_foto">
+    <div class="wrapper">
+        <div class="header_content">
+    <div class="header_logo">
+        <img src="img/logo.png">
+    </div>
+
+    <div class="header_tex">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="promo">
+        <div class="layout-2-column">
+            <div class="promo_block">
+                <div class="block_line">
+            <div class="promo_content_title">
+            <h>СЕЗОН 2020/21 </h>
+            </div>
+                </div>
+
+
+            <div class="promo_content">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+            <h1> Louis XVI ATHOS</h1>
+            <p> 165 000 руб.  </p>
+        </div>
+
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+            </div>
+
+                <div class="promo_content_card_adapt">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+            </div>
+                </div>
+    </div>
+            </div>
+          <div class="promo_content_foto">
+                <img class="adaptive" src="img/Rectangle 8.png">
+            <div class="collections">
+                <div class="block_line">
+                <div class="promo_content_title">
+                    <h>Новая коллекция </h>
+
+              <div class="collections_buttons">
+                  <button class="btn btn-3"> <p1> КАТАЛОГ </p1> </button>
+              </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+<section class="collections_watch">
+        <div class="layout-2-column">
+        <div class="collections_block">
+            <div class="collections_block_foto">
+                <img class="adaptive" src="img/Rectangle 9.png">
+            </div>
+            <div class="collections_block_text">
+            <div class="block_line">
+                <div class="promo_content_title">
+                    <h>коллекция 2018 </h>
+                </div>
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
+                <button class="custom-btn btn-1">  <p1> Посмотреть коллекцию </p1> </button>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="new">
+    <div class="wrapper">
+        <div class="new_block">
+        <h>новые поступления </h>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="wrapper">
+        <div class="main__content">
+        <div class="content_card">
+            <div class="promo_content_card">
+                <div class="card">
+                <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+
+                <button class="btn btn-2"> <p> купить </p> </button>
+
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+            </div>
+            </div>
+
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                <button class="btn btn-2"> <p> купить </p> </button>
+                <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                    <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                    <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                </svg>
+                </button>
+            </div>
+            </div>
+
+            <div class="adaptive_card">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="block_adaptive">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="content_cards">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="adaptive_card">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="block_adaptive">
+            <div class="promo_content_card">
+                <div class="card">
+                    <img src="img/62050 1.png">
+                </div>
+                <h1> Louis XVI ATHOS</h1>
+                <p> 165 000 руб.  </p>
+                <div class="card_block">
+                    <button class="btn btn-2"> <p> купить </p> </button>
+                    <button class="button button__colored"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0032 6.81175C19.9189 6.6899 19.8063 6.59031 19.675 6.5215C19.5438 6.45269 19.3978 6.41672 19.2497 6.41667H6.72159L5.66376 3.8775C5.52506 3.54312 5.29019 3.25746 4.98893 3.05673C4.68767 2.856 4.3336 2.74925 3.97159 2.75H1.83301V4.58334H3.97159L8.32026 15.0196C8.38991 15.1866 8.50742 15.3292 8.65798 15.4295C8.80854 15.5298 8.98542 15.5834 9.16634 15.5833H16.4997C16.8819 15.5833 17.2238 15.3459 17.3586 14.9893L20.1086 7.656C20.1606 7.51724 20.1781 7.36794 20.1598 7.22091C20.1414 7.07387 20.0877 6.93348 20.0032 6.81175V6.81175ZM15.8644 13.75H9.77776L7.48609 8.25H17.9269L15.8644 13.75Z" fill="white"></path>
+                        <path d="M9.625 19.25C10.3844 19.25 11 18.6344 11 17.875C11 17.1156 10.3844 16.5 9.625 16.5C8.86561 16.5 8.25 17.1156 8.25 17.875C8.25 18.6344 8.86561 19.25 9.625 19.25Z" fill="white"></path>
+                        <path d="M16.042 19.25C16.8014 19.25 17.417 18.6344 17.417 17.875C17.417 17.1156 16.8014 16.5 16.042 16.5C15.2826 16.5 14.667 17.1156 14.667 17.875C14.667 18.6344 15.2826 19.25 16.042 19.25Z" fill="white"></path>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="brends">
+        <div class="wrapper">
+        <div class="brends_block">
+        <div class="brends_title">
+    <h> наши бренды</h>
+            <div class="line_new_p">
+            </div>
+    </div>
+    <div class="brends_icon">
+        <img class="brends_icons" src="img/Rectangle 12.png">
+        <img class="brends_icons" src="img/Rectangle 12.png">
+        <img class="brends_icons" src="img/Rectangle 12.png">
+        <img class="brends_icons__adapt" src="img/Rectangle 12.png">
+    </div>
+        </div>
+    </div>
+</section>
+<section class="color">
+<div class="pt" id="pt"> </div>
+</section>
+<section class="footer">
+    <div class="wrapper">
+        <div class="layout-3-column">
+        <div class="footer_about">
+            <h>О магазине</h>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc. </p>
+    </div>
+            <div class="footer_categories">
+                <h>Категории </h>
+                <div class="footer_block">
+                <div class="block">
+                <p> часы </p>
+                </div>
+                    <div class="block_b">
+                <p> браслеты</p>
+                    </div>
+                        <div class="block_r">
+                <p> ремни </p>
+            </div>
+            </div>
+
+                <div class="block_f">
+            <div class="block_q">
+                <p> ювелирные изделия </p>
+            </div>
+
+                <div class="block_z">
+                <p>запонки</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="footer_mail">
+                <h>Рассылка </h>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. </p>
+                <div class="footer_mail_input">
+                <input class="mail" type="email" name="email" placeholder="E-mail">
+                <button type="submit" class="button button__color"> Подписаться </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script src="index.js"> </script>
+
+</body>
+</html>
